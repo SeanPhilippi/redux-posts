@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import { Provider } from 'react-redux';
-
+import store from './store';
 import Posts from './components/Posts';
 import PostForm from './components/PostForm';
 // second argument is inital state, applyMiddleware() is an enhancer

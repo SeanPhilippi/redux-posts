@@ -13,7 +13,12 @@ export default function (state = initialState, action) {
         // want to return current state
         ...state,
         items: action.payload
-      }
+      };
+    case NEW_POST:
+      return {
+        ...state,
+        item: action.payload
+      };
     default:
       return state;
   }
